@@ -1,0 +1,56 @@
+ul {
+    background-color: green;
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+#search-container {
+    display: inline;
+    text-align: center;
+}
+
+#search-container input{
+    width: 60%;
+}
+
+#search-container button {
+    background-color: #555;
+    margin-left: -1%;
+}
+
+#search-container:hover {
+    background-color: green;
+}
+
+#active {
+    background-color: black;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 15px;
+}
+
+ ul li:hover {
+    background-color: #555;
+}
+
+#cart {
+    float: right;
+}
+
+#login {
+    float: right;
+}
+
+#title {
+    text-align: center;
+    padding: 30px;
+}
