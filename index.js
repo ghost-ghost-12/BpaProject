@@ -1,20 +1,3 @@
-/*var express = require('express');
-var app = express();
-var path = require('path');
-
-app.use(express.static("public"));
-
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/views/home.html'));
-});
-
-var server = app.listen(5000, function () {
-    console.log('Its been Chazzed')
-});
-*/
-//.get('/', (req, res) => res.render('home.html'))
-
-
 const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
