@@ -1,0 +1,13 @@
+{
+  "name": "cryptic-earth-32236",
+  "version": "1.0.0",
+  "description": "EpicSports",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "Testing"
+  },
+  "author": "",
+  "license": "ISC"
+}
