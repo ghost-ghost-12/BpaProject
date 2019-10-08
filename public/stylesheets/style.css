@@ -5,33 +5,56 @@ ul {
     width: 100%;
 }
 
-#search-container {
-    display: inline;
+body {
+    min-width: 700px;
+}
+
+.search-container {
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    border:1px solid #000;
     text-align: center;
+    padding: .1%;
 }
 
-#search-container input{
-    width: 60%;
+.search-container input, button {
+    background-color: transparent;
+    border: 0;
 }
 
-#search-container button {
-    background-color: #555;
-    margin-left: -1%;
+.search-container:hover {
+    background-color: white;
 }
 
-#search-container:hover {
-    background-color: green;
+.search-container button {
+    position: absolute;
+    right: 0;
+    top:0;
 }
 
-#active {
-    background-color: black;
+.main {
+
+    border: 2px solid black;
+    background: url('https://i.imgur.com/2JQLVQk.png');
+
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-#footer {
-    position: fixed;
-    bottom: 0;
+.footer {
+    position: relative;
     margin-bottom: 0;
+    
+    /*min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
 }
+
 
 li {
     display: inline-block;
@@ -42,15 +65,10 @@ li {
     background-color: #555;
 }
 
-#cart {
+.cart {
     float: right;
 }
 
-#login {
+.login {
     float: right;
-}
-
-#title {
-    text-align: center;
-    padding: 30px;
 }
