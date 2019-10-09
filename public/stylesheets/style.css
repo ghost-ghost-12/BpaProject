@@ -34,19 +34,32 @@ body {
 }
 
 .main {
-
     border: 2px solid black;
     background: url('https://i.imgur.com/2JQLVQk.png');
-
-    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px;
+}
 
+.main button {
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    bottom: 5%;
 }
 
 .footer {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     margin-bottom: 0;
     
     /*min-height: 100%;
