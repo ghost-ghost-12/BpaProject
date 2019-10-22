@@ -1,0 +1,17 @@
+  
+<html>
+    <head></head>
+    <body>
+        <% {title} %>
+        <h1>Products</h1>
+        <a href="/">Main</a>
+        <% for(let i = 0; i < products.length; i++) { %>
+            <article>
+                <p><%= products[i].Picture %></p>
+                <p><%= products[i].Price %></p>
+            </article>
+            <% } %>
+
+        </form>
+    </body>
+</html>

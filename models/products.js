@@ -1,19 +1,14 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var schema = new Schema ({
+var ProductSchema = new Schema ({
+
+    Name: {
+        type: String,
+        required: true
+    },
 
     Picture: {
-        type: String,
-        required: true
-    },
-
-    name: {
-        type: String,
-        required: true
-    },
-
-    Description: {
         type: String,
         required: true
     },
@@ -26,8 +21,13 @@ var schema = new Schema ({
     QTY:{
         type: Number,
         required: true
+    },
+
+    Description: {
+        type: String,
+        required: true
     }
 
-});
+},{collection:'Product'});
 
-module.exports = mongoose.model('Product', schema);
+module.exports = mongoose.model('Product', ProductSchema);
