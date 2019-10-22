@@ -63,15 +63,37 @@ body {
 }
 
 .content1 {
-    display: inline-block;
-    text-align: center;
-    padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 300px;
 }
 
-.content1 img {
-    height: 30%;
-    width: 30%;
-    padding: 50px;
+.box {
+    border-style: solid;
+    border-width: 30px;
+    border-color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.box p{
+    background-color: green;
+}
+
+.A {
+    background-image: url("https://i.imgur.com/B2pr55k.jpg");
+}
+
+.B {
+    background-image: url("https://i.imgur.com/XrC7n1T.jpg");
+}
+
+.C {
+    background-image: url("https://i.imgur.com/qXIn49a.jpg");
 }
 
 .footer {
