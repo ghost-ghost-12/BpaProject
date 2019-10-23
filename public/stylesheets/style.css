@@ -6,7 +6,11 @@ ul {
 }
 
 body {
-    min-width: 700px;
+    min-width: 800px;
+}
+
+.header {
+    margin-bottom: 0;
 }
 
 .search-container {
@@ -43,29 +47,57 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px;
+    padding: 20%;
 }
 
 .main button {
     background-color: whitesmoke;
     border: none;
     border-radius: 8px;
+    padding: 1%;
     text-align: center;
-    height: 10%;
-    width: 10%;
+    font-weight: bold;
+    width: fit-content;
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
+}
+
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 300px;
+}
+
+.box {
+    border-style: solid;
+    border-width: 30px;
+    border-color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.box p{
+    background-color: green;
+}
+
+.A {
+    background-image: url("https://i.imgur.com/B2pr55k.jpg");
+}
+
+.B {
+    background-image: url("https://i.imgur.com/XrC7n1T.jpg");
+}
+
+.C {
+    background-image: url("https://i.imgur.com/qXIn49a.jpg");
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     margin-bottom: 0;
-    
-    /*min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
 }
 
 
