@@ -1,6 +1,5 @@
 const express = require('express')
 const path = require('path')
-var router = express.Router();
 const PORT = process.env.PORT || 5000
 var mongoose = require('mongoose')
 

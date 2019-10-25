@@ -26,6 +26,11 @@ var ProductSchema = new Schema ({
     Description: {
         type: String,
         required: true
+    },
+    
+    Category: {
+        type: String,
+        required: true
     }
 
 },{collection:'Product'});

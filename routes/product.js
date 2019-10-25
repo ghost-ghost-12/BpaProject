@@ -6,7 +6,7 @@ var Product = require('../models/products');
 
 /* GET products page. */
 router.get('/', function(req, res) {
-	Product.find(function(err, products){
+	Product.find({Category: "Shoes"} , function(err, products){
 		console.log("im here")
 		
 		//var productChunks = [];

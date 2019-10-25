@@ -3,13 +3,22 @@
     <head></head>
     <body>
         <% {title} %>
-        <h1>Products</h1>
         <a href="/">Main</a>
+        <h1>Products</h1>
+        <h2><%= products[0].Category %></h2>
+        
         <% for(let i = 0; i < products.length; i++) { %>
-            <article>
-                <p><%= products[i].Picture %></p>
-                <p><%= products[i].Price %></p>
-            </article>
+
+                <img src = "<%= products[i].Picture %>">
+                
+                <p2><%= products[i].Name %></p>
+                    <p3><%= products[i].Description %></p>
+
+                    <p><%= products[i].Price %></p>
+                <p2><%= products[i].QTY %></p>
+                
+                
+
             <% } %>
 
         </form>
