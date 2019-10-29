@@ -1,6 +1,15 @@
   
 <html>
-    <head></head>
+    <head>
+<style>
+    .grid {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        height: 400px;
+    }
+    </style>
+
+    </head>
     <body>
         <% {title} %>
         <a href="/">Main</a>
@@ -9,9 +18,14 @@
         
         <% for(let i = 0; i < products.length; i++) { %>
 
-                <img src = "<%= products[i].Picture %>">
+<div class="grid">
+    <div class="Jordans"></div>
+</div>
+        
+       
+                <img width = 200px src = "<%= products[i].Picture %>">
                 
-                <p2><%= products[i].Name %></p>
+                <p2 ><%= products[i].Name %></p>
                     <p3><%= products[i].Description %></p>
 
                     <p><%= products[i].Price %></p>
