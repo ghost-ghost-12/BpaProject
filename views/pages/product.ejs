@@ -1,7 +1,22 @@
-  
+<!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel = "stylesheet" type = "text/css" href = "../stylesheets/style.css"/>
+    </head>
     <body>
+            <ul class = "header">
+                    <li class = "home">Home</li>
+                    <li class = "about">About</li>
+                    <li class = "cart">🛒 Cart</li>
+                    <li class = "login">Login/signUp</li>
+                    <li class = "search-container">
+                        <input type="text" placeholder="Search store" name="search">
+                        <button type="submit"><i class="fa fa-search"></i>🔍</button>
+                    </li>
+                </ul>
+
         <% {title} %>
         <h1>Products</h1>
         <a href="/">Main</a>
@@ -11,7 +26,11 @@
                 <p><%= products[i].Price %></p>
             </article>
             <% } %>
-
         </form>
+        
+        <ul class = "footer">
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
     </body>
 </html>
