@@ -7,7 +7,7 @@
     </head>
     <body>
             <ul class = "header">
-                    <li class = "home">Home</li>
+                    <li class = "home"><a href="/">Home</a></li>
                     <li class = "about">About</li>
                     <li class = "cart">🛒 Cart</li>
                     <li class = "login">Login/signUp</li>
@@ -18,16 +18,23 @@
                 </ul>
 
         <% {title} %>
-        <h1>Products</h1>
-        <a href="/">Main</a>
-        <% for(let i = 0; i < products.length; i++) { %>
-            <article>
-                <p><%= products[i].Picture %></p>
-                <p><%= products[i].Price %></p>
-            </article>
-            <% } %>
-        </form>
+        <h1 class = "title">Products</h1>
+        <h2 class = "subTitle"><%= products[0].Category %></h2>
         
+        <div class="content2">
+        <% for(let i = 0; i < products.length; i++) { %>
+
+        <div class="content2-i">
+        <div class = "contentImg"><img width = 200px src = "<%= products[i].Picture %>"></div>
+                <p2 class = "productName"><%= products[i].Name %></p>
+                    <p3 class = "productDes"><%= products[i].Description %></p>
+
+                    <p class = "productPrice"><%= products[i].Price %></p>
+                <!--<p2><%= products[i].QTY %></p>!-->
+                </div>
+                <% } %>
+</div>
+
         <ul class = "footer">
                 <li>Contact</li>
                 <li>Help</li>
