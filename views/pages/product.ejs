@@ -1,16 +1,33 @@
-  
+<!DOCTYPE html>
 <html>
     <head>
+<<<<<<< HEAD
 <style>
 
 </style>
+=======
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel = "stylesheet" type = "text/css" href = "../stylesheets/style.css"/>
+>>>>>>> 1e327bc31f73dc4a950e6cacbf1bc125dfb4f115
     </head>
     <body>
+            <ul class = "header">
+                    <li class = "home"><a href="/">Home</a></li>
+                    <li class = "about">About</li>
+                    <li class = "cart">🛒 Cart</li>
+                    <li class = "login">Login/signUp</li>
+                    <li class = "search-container">
+                        <input type="text" placeholder="Search store" name="search">
+                        <button type="submit"><i class="fa fa-search"></i>🔍</button>
+                    </li>
+                </ul>
+
         <% {title} %>
-        <a href="/">Main</a>
-        <h1>Products</h1>
-        <h2><%= products[0].Category %></h2>
+        <h1 class = "title">Products</h1>
+        <h2 class = "subTitle"><%= products[0].Category %></h2>
         
+<<<<<<< HEAD
 
 
         
@@ -26,10 +43,26 @@
                 <p2><%= products[i].QTY %></p>
                 
                 
+=======
+        <div class="content2">
+        <% for(let i = 0; i < products.length; i++) { %>
 
-            <% } %>
+        <div class="content2-i">
+        <div class = "contentImg"><img width = 200px src = "<%= products[i].Picture %>"></div>
+                <p2 class = "productName"><%= products[i].Name %></p>
+                    <p3 class = "productDes"><%= products[i].Description %></p>
+>>>>>>> 1e327bc31f73dc4a950e6cacbf1bc125dfb4f115
 
-        </form>
+                    <p class = "productPrice"><%= products[i].Price %></p>
+                <!--<p2><%= products[i].QTY %></p>!-->
+                </div>
+                <% } %>
+</div>
+
+        <ul class = "footer">
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
     </body>
 </html>
 

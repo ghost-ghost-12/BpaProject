@@ -1,3 +1,7 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 ul {
     background-color: green;
     color: white;
@@ -37,6 +41,17 @@ body {
     top:0;
 }
 
+.title {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+.subTitle {
+    text-align: center;
+    margin-top: 0;
+}
+
 .main {
     border: 2px solid black;
     background: url('https://i.imgur.com/2JQLVQk.png');
@@ -45,13 +60,12 @@ body {
     background-size: cover;
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 20%;
 }
 
 .main button {
-    background-color: whitesmoke;
+    background-color: green;
     border: none;
     border-radius: 8px;
     padding: 1%;
@@ -66,6 +80,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 300px;
+  margin-bottom: 2%;
 }
 
 .box {
@@ -86,24 +101,40 @@ body {
 
 .A {
     background-image: url("https://i.imgur.com/B2pr55k.jpg");
+    height: 100%;
 }
 
 .B {
     background-image: url("https://i.imgur.com/XrC7n1T.jpg");
+    height: 100%;
 }
 
 .C {
     background-image: url("https://i.imgur.com/qXIn49a.jpg");
+    height: 100%;
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
     margin-bottom: 0;
 }
-
 
 li {
     display: inline-block;
     padding: 15px;
+}
+
+a button {
+    color: black;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
 }
 
  ul li:hover {
@@ -116,4 +147,22 @@ li {
 
 .login {
     float: right;
+}
+
+.content2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 300px;
+}
+
+.content2-i {
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    text-align: left;
+    padding: 10px;
+}
+
+.productImg {
+    text-align: center;
 }
