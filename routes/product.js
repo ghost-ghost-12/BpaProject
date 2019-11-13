@@ -22,7 +22,5 @@ router.get('/', function(req, res) {
 		console.log(products);
 		  }
 	});
-	
 });
-
 module.exports = router;

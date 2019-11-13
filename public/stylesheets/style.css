@@ -11,6 +11,7 @@ ul {
 
 body {
     min-width: 800px;
+   min-height: 1000px;
 }
 
 .header {
@@ -42,8 +43,9 @@ body {
 }
 
 .title {
+    text-decoration: underline;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-bottom: 0;
 }
 
@@ -152,7 +154,6 @@ a:hover {
 .content2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 300px;
 }
 
 .content2-i {
@@ -160,9 +161,49 @@ a:hover {
     border-color: grey;
     border-width: 1px;
     text-align: left;
-    padding: 10px;
+    padding: 3px;
 }
 
-.productImg {
+.content2-i h6 {
+    font-weight: bold;
+}
+
+.content2 button {
+    background-color: green;
+    margin-top: -3px;
+    border-radius: 8px;
+    color: white;
+}
+
+.content3 {
+ margin-top: 5%;
+ margin-left: 10%;
+ display: grid;
+ grid-template-columns: 1fr;
+ height: 300px;
+}
+
+.content3 img {
+    width: cover;
+}
+
+.content3 h6 {
+    font-weight: bold;
+}
+
+.total {
     text-align: center;
 }
+
+.mainCart button{
+    margin-top: -13%;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    font-size: 140%;
+    float: right;
+    margin-right: 10%;
+    padding: 1%;
+    width: 15%;
+}
+
