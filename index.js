@@ -3,7 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 var mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost:27017/mydb');
+mongoose.connect('mongodb://dbuser:dbpassword1@ds063180.mlab.com:63180/heroku_3wvd8gzq');
 
 var productRouter = require('./routes/product');
 
