@@ -20,19 +20,7 @@
         <% {title} %>
         <h1 class = "title">Products</h1>
         <h2 class = "subTitle"><%= products[0].Category %></h2>
-        
-        <% for(let i = 0; i < products.length; i++) { %>
-
-       
-                <img width = 200px src = "<%= products[i].Picture %>">
-                
-                <p2 ><%= products[i].Name %></p>
-                    <p3><%= products[i].Description %></p>
-
-                    <p><%= products[i].Price %></p>
-                <p2><%= products[i].QTY %></p>
-                
-                    
+                         
         <div class="content2">
         <% for(let i = 0; i < products.length; i++) { %>
 
@@ -40,9 +28,6 @@
         <div class = "contentImg"><img width = 200px src = "<%= products[i].Picture %>"></div>
                 <h6 class = "productName"><%= products[i].Name %></h6>
                     <p class = "productDes"><%= products[i].Description %></p>
-                    <p class = "productPrice">$<%= products[i].Price %></p>
-h
-
                     <p class = "productPrice"><%= products[i].Price %></p>
                 <!--<p2><%= products[i].QTY %></p>!-->
                     <button class="productButton">Add to Cart</button>
