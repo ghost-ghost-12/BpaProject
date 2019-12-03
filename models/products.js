@@ -5,32 +5,26 @@ var ProductSchema = new Schema ({
 
     Name: {
         type: String,
-        required: true
     },
 
     Picture: {
-        type: String,
-        required: true
+        type: String
     },
 
     Price: {
-        type: Number,
-        required: true
+        type: Number
     },
 
     QTY:{
-        type: Number,
-        required: true
+        type: Number
     },
 
     Description: {
-        type: String,
-        required: true
+        type: String
     },
     
     Category: {
-        type: String,
-        required: true
+        type: String
     }
 
 },{collection:'Product'});
