@@ -10,8 +10,8 @@ ul {
 }
 
 body {
-    min-width: 800px;
-   min-height: 1000px;
+   min-width: 800px;
+   min-height: 800px;
 }
 
 .header {
@@ -137,6 +137,11 @@ a {
 
 a:hover {
     color: white;
+}
+
+ul li {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
  ul li:hover {

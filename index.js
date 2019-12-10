@@ -3,9 +3,11 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 var mongoose = require('mongoose')
 
+
 mongoose.connect('mongodb://dbuser:dbpassword1@ds063180.mlab.com:63180/heroku_3wvd8gzq');
 
 var productRouter = require('./routes/product');
+var cartRouter = require('./routes/cart');
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
@@ -14,6 +16,8 @@ express()
   //.set('view engine', 'html')
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/cart', (req, res) => res.render('pages/cart'))
+  //.get('/cart', (req, res) => res.render('pages/cart'))
   .use('/product', productRouter)
+  .use('/cart', cartRouter)
+//  .get('/add/:id', (req, res) => res.render('pages/cart'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
