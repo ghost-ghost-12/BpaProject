@@ -1,0 +1,26 @@
+
+<div class="row top-row">
+  <h1 class="page-header">
+    <%= products.title %>
+  </h1>
+</div>
+<div class="row top-row">
+  <div class="col-xs-12 col-md-5">
+    <img src="/product-images/<%= products.id %>/<%= products.image %>" alt="" class="spi">
+    <br>
+  </div>
+  <div class="col-xs-12 col-md-6">
+    <p class="spi-desc">
+      <%= products.desc %>
+    </p>
+    <p class="price">Price: $
+      <%= parseFloat(products.price).toFixed(2) %>
+    </p>
+    <p><a href="/cart/add/<%= products.id %>" class="vd">Add to cart &raquo;</a></p>
+  </div>
+  <div class="col-xs-12">
+  </div>
+
+
+</div>
+

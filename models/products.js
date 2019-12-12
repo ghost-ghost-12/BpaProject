@@ -11,7 +11,7 @@ var ProductSchema = new Schema ({
         type: String
     },
 
-    Price: {
+    price: {
         type: Number
     },
 

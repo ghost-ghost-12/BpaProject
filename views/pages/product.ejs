@@ -10,6 +10,7 @@
             <a href="/"><li class = "home">Home</li></a>
             <li class = "about">About</li>
             <a href="/cart"><li class = "cart">🛒 Cart</li></a>
+
             <li class = "login">Login/signUp</li>
             <li class = "search-container">
                 <input type="text" placeholder="Search store" name="search">
@@ -20,22 +21,43 @@
         <% {title} %>
         <h1 class = "title">Products</h1>
         <h2 class = "subTitle"><%= products[0].Category %></h2>
-                
-        <div class="content2">
-        <% for(let i = 0; i < products.length; i++) { %>
 
-        <div class="content2-i">
-        <div class = "contentImg"><img width = 200px src = "<%= products[i].Picture %>"></div>
-                <h6 class = "productName"><%= products[i].Name %></h6>
-                    <p class = "productDes"><%= products[i].Description %></p>
-                    <p class = "productPrice">$<%= products[i].Price %></p>
-                <!--<p2><%= products[i].QTY %></p>!--><form action="/add-to-cart/<%= products[i]._id %>" >
+        <div class="content2">
+                
+        <% for(let i = 0; i < products.length; i++) { %>
+<!-- 
+
+            <div class="col-sm-6 col-md-4 main">
+                <div class="card thumbnail" style="width: 20rem;">
+                    <img class="card-img-top shop-image img-fluid" src="<%= products[i].Picture %>" alt="Card image cap">
+                    <div class="card-block">
+                        <h4 class="card-title"><%= products[i].Name %></h4>
+                        <p class="card-text description">
+                            <%= products[i].Description %>
+                        </p>
+                        <div class="clearfix">
+                            <div class="price pull-left"><%= products[i].Price %></div>
+                            <a href="/product/add-to-cart/<%= products[i]._id %>" class="btn btn-raised btn-success pull-right">
+                                <i class="fa fa-plus" aria-hidden="true"></i> Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        -->
+               
+
+            <div class="content2-i">
+                    <div class = "contentImg"><img width = 200px src = "<%= products[i].Picture %>"></div>
+        <form action="/product/add-to-cart/<%= products[i]._id %>" >
+            <h6 class = "productName"><%=products[i].Name%></h6>
+                    <p class = "description"><%=products[i].Description%></p>
+                    <p class = "price"><%=products[i].price%></p>
                     <button class="productButton">Add to Cart</button>
                 </form>
-
-                <a href="product/add/123" class="btn btn-raised btn-success pull-right">
-                    <i class="fa fa-plus" aria-hidden="true"></i> Add </a>
-                </div>
+ 
+            </div>
+     
                 <% } %>
 </div>
 
